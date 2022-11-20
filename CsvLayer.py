@@ -7,7 +7,7 @@ class CsvLayer:
     """
     Deals with writing to a file using python's csv.
     """
-    def __init__(self, pid):
+    def __init__(self, pid: int):
         """
         Creates file with 'pid' as a name
         :param pid: Process number to be used as filename

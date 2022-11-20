@@ -12,7 +12,7 @@ class InputLayer:
         self.duration = 0
         self.interval = 5
 
-    def get_pid(self):
+    def get_pid(self) -> int:
         """
         Gets process id number from user
         :return: pid as int
@@ -23,7 +23,7 @@ class InputLayer:
             self.pid = input('Enter process id number: ')
         return int(self.pid)
 
-    def get_duration(self):
+    def get_duration(self) -> int:
         """
         Gets monitoring duration from user
         :return: duration as int
@@ -34,7 +34,7 @@ class InputLayer:
             self.duration = input('Overall duration of the monitoring: ')
         return int(self.duration)
 
-    def get_interval(self):
+    def get_interval(self) -> int:
         """
         Gets interval between samples from user
         :return: Interval as int

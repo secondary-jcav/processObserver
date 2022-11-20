@@ -17,7 +17,7 @@ class ProcessLayer:
         elif platform.system() == 'Darwin':
             self.MACOS = True
 
-    def process_exists(self, pid):
+    def process_exists(self, pid: int) -> bool:
         """
         Check that process exists
         :param pid: process id number
@@ -35,7 +35,7 @@ class ProcessLayer:
         elif self.MACOS:
             print('Mac not tested yet')
 
-    def get_process_info(self, pid, interval):
+    def get_process_info(self, pid: int, interval: int) -> dict:
         """
         Given a process id, return % cpu usage, private memory used, number of file descriptors
         :param interval: wait between calls
